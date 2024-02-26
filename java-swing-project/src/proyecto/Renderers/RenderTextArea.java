@@ -1,11 +1,9 @@
 package proyecto.Renderers;
 
-import java.awt.Dimension;
-import java.awt.Font;
 import java.net.URL;
-import java.awt.FlowLayout;
-import proyecto.Colors;
 
+import proyecto.Colors;
+import proyecto.Uppercase;
 
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
@@ -45,6 +43,7 @@ public class RenderTextArea {
          compField.setFont(new Font("Helvetica", Font.PLAIN, 20));
          compField.setInputVerifier(inputVerifier);
          compField.setBackground(Colors.formbg);
+
 
         JLabel imageLabel = new JLabel();
         imageLabel.setSize(30,30);

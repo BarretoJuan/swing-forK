@@ -15,10 +15,17 @@ import javax.swing.JLabel;
 import javax.imageio.ImageIO;
 import javax.swing.ImageIcon;
 
-import java.awt.Image; 
+import java.awt.Image;
+import java.awt.event.KeyEvent;
+import java.awt.event.KeyListener;
 import java.net.URL;
+import proyecto.Uppercase;
+
+
 
 public class RenderEntry {
+
+    
 
     public RenderEntry(String LabelText, String EntryText, JPanel MainPanel, InputVerifier inputVerifier, String url){
         JPanel RowPanel = new JPanel(); // We create a Panel for the first row
@@ -40,6 +47,10 @@ public class RenderEntry {
         CompField.setFont(new Font("Helvetica", Font.PLAIN, 20));
         CompField.setInputVerifier(inputVerifier);
         CompField.setBackground(Colors.formbg);
+        CompField.addKeyListener(new Uppercase.UppercaseListener());
+     
+
+    
 
         JLabel imageLabel = new JLabel();
         imageLabel.setSize(30,30);
@@ -57,6 +68,7 @@ public class RenderEntry {
         }
         imageLabel.setHorizontalAlignment(JLabel.RIGHT);
         CompLabel.setHorizontalAlignment(JLabel.RIGHT);
+        
 
 
         // Add the components to the panel
@@ -70,4 +82,10 @@ public class RenderEntry {
         MainPanel.add(RowPanel);
     }
         
+
+
+    
+
+ 
+
 }

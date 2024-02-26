@@ -1,6 +1,7 @@
 package proyecto;
 import java.awt.*;
-
+import java.awt.event.KeyEvent;
+import java.awt.event.KeyListener;
 import java.net.URL;
 
 
@@ -13,6 +14,7 @@ import proyecto.Renderers.RenderEntry;
 import proyecto.Renderers.RenderGender;
 import proyecto.Renderers.RenderSeparator;
 import proyecto.Renderers.RenderTextArea;
+import javax.swing.text.*;
 
 
 
@@ -37,6 +39,11 @@ public class Proyecto extends JFrame{
         this.setResizable(false); //Establecer la ventana no modificable en tamaño
         initializeComps(); // llamar componentes
     }
+
+    
+
+    
+
 
 
     class FondoPanel extends JPanel {

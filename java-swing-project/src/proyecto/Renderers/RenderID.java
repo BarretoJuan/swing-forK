@@ -1,11 +1,11 @@
 package proyecto.Renderers;
-import java.awt.Dimension;
-import java.awt.Font;
 import java.net.URL;
-import java.awt.FlowLayout;
+
 import javax.swing.JTextField;
 import proyecto.Colors;
 import proyecto.ShowHint;
+import proyecto.Uppercase;
+
 import javax.swing.JPanel;
 import javax.imageio.ImageIO;
 import javax.swing.ImageIcon;
@@ -37,6 +37,7 @@ public class RenderID {
         CompField.setFont(new Font("Verdana", Font.PLAIN, 20));
         CompField.setInputVerifier(inputVerifier);
         CompField.setBackground(Colors.formbg);
+        CompField.addKeyListener(new Uppercase.UppercaseListener());
         String tiposCedula[] = {"V","E"};
         JComboBox tipoCedula = new JComboBox(tiposCedula);
         tipoCedula.setPreferredSize(new Dimension(35,30));
