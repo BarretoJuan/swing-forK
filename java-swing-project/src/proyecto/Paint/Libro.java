@@ -1,3 +1,4 @@
+package proyecto.Paint;
 import javax.swing.*;
 import java.awt.*;
 import proyecto.Colors;
@@ -8,7 +9,7 @@ import proyecto.Colors;
 public class Libro extends JFrame {
 
     public Libro( ){
-        this.setSize(512,512);
+        this.setSize(260,330);
         this.setTitle("Libro Barreto");
         this.setLocationRelativeTo(null);
         this.setDefaultCloseOperation(EXIT_ON_CLOSE);
