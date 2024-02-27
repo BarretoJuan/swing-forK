@@ -3,7 +3,7 @@ package proyecto.Renderers;
 import java.net.URL;
 
 import proyecto.Colors;
-import proyecto.Uppercase;
+
 
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;

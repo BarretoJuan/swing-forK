@@ -13,7 +13,6 @@ import javax.swing.InputVerifier;
 import javax.swing.JComboBox;
 import javax.swing.JLabel;
 import java.awt.*;
-import java.net.*;
 
 public class RenderID {
 
@@ -39,7 +38,7 @@ public class RenderID {
         CompField.setBackground(Colors.formbg);
         CompField.addKeyListener(new Uppercase.UppercaseListener());
         String tiposCedula[] = {"V","E"};
-        JComboBox tipoCedula = new JComboBox(tiposCedula);
+        JComboBox<String> tipoCedula = new JComboBox<>(tiposCedula);
         tipoCedula.setPreferredSize(new Dimension(35,30));
         
         JLabel imageLabel = new JLabel();

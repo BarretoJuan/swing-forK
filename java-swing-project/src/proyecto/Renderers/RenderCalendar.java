@@ -14,14 +14,13 @@ import javax.swing.InputVerifier;
 
 import proyecto.Colors;
 import proyecto.ShowHint;
-import proyecto.Verify;
 import java.awt.*;
 import java.awt.Dimension;
 import java.awt.Font;
 import java.net.URL;
 import java.text.SimpleDateFormat;
 import java.util.Locale;
-import java.net.*;
+
 
 
 

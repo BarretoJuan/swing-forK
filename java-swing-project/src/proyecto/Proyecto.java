@@ -1,12 +1,7 @@
 package proyecto;
 import java.awt.*;
-import java.awt.event.KeyEvent;
-import java.awt.event.KeyListener;
 import java.net.URL;
-
-
 import javax.swing.*;
-
 import proyecto.Renderers.RenderBloodType;
 import proyecto.Renderers.RenderCalendar;
 import proyecto.Renderers.RenderID;
@@ -14,7 +9,6 @@ import proyecto.Renderers.RenderEntry;
 import proyecto.Renderers.RenderGender;
 import proyecto.Renderers.RenderSeparator;
 import proyecto.Renderers.RenderTextArea;
-import javax.swing.text.*;
 
 
 

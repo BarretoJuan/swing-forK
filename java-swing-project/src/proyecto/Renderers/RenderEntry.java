@@ -16,10 +16,9 @@ import javax.imageio.ImageIO;
 import javax.swing.ImageIcon;
 
 import java.awt.Image;
-import java.awt.event.KeyEvent;
-import java.awt.event.KeyListener;
 import java.net.URL;
 import proyecto.Uppercase;
+import proyecto.Verify;
 
 
 
@@ -45,7 +44,7 @@ public class RenderEntry {
         ShowHint.setHint(EntryText,CompField);
         CompField.setPreferredSize(new Dimension(250, 30));
         CompField.setFont(new Font("Helvetica", Font.PLAIN, 20));
-        CompField.setInputVerifier(inputVerifier);
+        CompField.setInputVerifier(new Verify.CedulaVerifier());
         CompField.setBackground(Colors.formbg);
         CompField.addKeyListener(new Uppercase.UppercaseListener());
      
